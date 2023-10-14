@@ -13,7 +13,8 @@ public class ShopScript : MonoBehaviour
 
     private List<Vector2> displayLocations = new List<Vector2>() { new Vector2(-2.97f, -2.94f), new Vector2(-0.3f, -2.94f), new Vector2(2.37f, -2.94f) };
 
-    private int playerTurn = 1;
+    private PlayerMovement playerMovement;
+    private int playerTurn = playerMovement._currentPlayer;
     
     private List<GameObject> inventoryItems1 = new List<GameObject>();
     private List<GameObject> inventoryItems2 = new List<GameObject>();
@@ -36,19 +37,19 @@ public class ShopScript : MonoBehaviour
 
     public void OnItemClick(GameObject clickedItem)
     {
-        if(playerTurn == 1)
+        if(playerTurn == 0)
         {
             AddToInventory1(clickedItem);
         }
-        else if(playerTurn == 2)
+        else if(playerTurn == 1)
         {
             AddToInventory2(clickedItem);
         }
-        else if( playerTurn == 3)
+        else if( playerTurn == 2)
         {
             AddToInventory3(clickedItem);
         }
-        else if (playerTurn == 4)
+        else if (playerTurn == 3)
         {
             AddToInventory4(clickedItem);
         }
