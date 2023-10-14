@@ -13,9 +13,8 @@ public class ShopScript : MonoBehaviour
 
     private List<Vector2> displayLocations = new List<Vector2>() { new Vector2(-2.97f, -2.94f), new Vector2(-0.3f, -2.94f), new Vector2(2.37f, -2.94f) };
 
-    
-
     private int playerTurn = 1;
+    
     private List<GameObject> inventoryItems1 = new List<GameObject>();
     private List<GameObject> inventoryItems2 = new List<GameObject>();
     private List<GameObject> inventoryItems3 = new List<GameObject>();
