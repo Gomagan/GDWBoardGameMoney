@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     bool _gameIsOver;
     bool _turnStarted;
 
-    int _currentPlayer = 0;
+    public int _currentPlayer = 0;
     int _tileMovementAmount;
 
     //Dice script variables and class initialization
